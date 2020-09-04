@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style href="style.css" type="text/css"></style>
+    <title>M133 Formular</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <form>
-        <p>Vorname <input id="firstname" type="text" /></p>
-        <p>Nachname <input id="name" type="text" /></p>
-        <p>Strasse <input id="street" type="text" /></p>
-        <p>Hausnummer <input id="streetnumber" type="number" /></p>
-        <p>PLZ <input id="postalcode" type="text" pattern="\d{4}" /></p>
-        <p>Ort <input id="city" type="text" /></p>
-        <p>Alter <input id="age" type="number" /></p>
-        <p>E-Mail <input id="email" type="email" /></p>
-    </form>
+    <main>
+        <form>
+            <section>
+                <div><input placeholder="Vorname" id="firstname" type="text" /><input placeholder="Nachname" id="name" type="text" /></div>
+                <div><input placeholder="Strasse" id="street" type="text" /><input placeholder="Nr." id="streetnumber" type="number" /></div>
+                <div><input placeholder="PLZ" id="postalcode" type="text" pattern="\d{4}" /><input placeholder="Ort" id="city" type="text" /></div>
+            </section>
+            <section>
+                <div><input placeholder="Alter" id="age" type="number" /><input placeholder="E-Mail" id="email" type="email" /></div>
+            </section>
+            <section>
+                <input type="submit" value="Senden" />
+                <input type="reset" value="Zurücksetzen" />
+            </section>
+        </form>
+    </main>
 </body>
 </html>

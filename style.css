@@ -1,3 +1,39 @@
-body{
-    background-color: red;
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 4px;
+    flex-grow: 4;
+}
+
+div {
+    display: flex;
+}
+
+#streetnumber, #postalcode, #age {
+    width: 50px;
+    flex-grow: 2;
+}
+
+input[type=submit] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    float: right;
+    width: fit-content;
+}
+
+section {
+    margin: 20px 0;
+}
+
+main {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    display: flex;
 }
